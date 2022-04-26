@@ -8,7 +8,7 @@ if(!process.env.DEVZAT_ADDRESS) throw new Error("DEVZAT_ADDRESS environment vari
 const plugin = new Devzat({
     address: process.env.DEVZAT_ADDRESS,
     token: process.env.DEVZAT_TOKEN,
-    name: "Hack Club Emoji Middleware"
+    name: "Hack Club Emoji"
 });
 
 let emojiNames: string[] = [];
@@ -61,3 +61,12 @@ plugin.onMessageSend({
 const fetchEmoji = (names: string[]) => names.reduce((acc, name) => acc + fetchEmojiSingle(name), "");
 
 const fetchEmojiSingle = (name: string) => emojiNames.includes(name) ? `![${name}](https://e.benjaminsmith.dev/${name})` : "";
+
+plugin.command({
+    name: "random-hc-emoji",
+    info: "Get a random emoji from the Hack Club Slack",
+    argsInfo: ""
+}, () => {
+    const emojiName = emojiNames[Math.floor(Math.random() * emojiNames.length)];
+    return `![${emojiName}](https://e.benjaminsmith.dev/${emojiName})`;
+});
