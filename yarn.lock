@@ -143,17 +143,12 @@ data-uri-to-buffer@^4.0.0:
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-4.0.0.tgz#b5db46aea50f6176428ac05b73be39a57701a64b"
   integrity sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==
 
-devzat@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/devzat/-/devzat-0.1.0.tgz#67e229b81020950e9562dd995cf89586e4aca093"
-  integrity sha512-+NVrw8WKyXa4N0P3tgYZimIvn/cuTiamexvQiB+tqI+WLil191rrD4EGlD6Dv7rUVStP7r0zlQmLr1fIX+14/A==
+devzat@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/devzat/-/devzat-0.2.1.tgz#40c7821ad879169531f77c6731fd161fb02484d2"
+  integrity sha512-GnFBp262VTYETTJII4CcZPsRG4ptbwadNZS5tMPbiZMlOKarvXlnEAWCwncVvJ0uUUVwt7pLSIeIKumk/zDWhg==
   dependencies:
     "@grpc/grpc-js" "^1.6.2"
-    devzat "https://github.com/quackduck/devzat"
-
-"devzat@https://github.com/quackduck/devzat":
-  version "0.0.0"
-  resolved "https://github.com/quackduck/devzat#302551281ffabb4e6154bd2101b22bdb457b2002"
 
 dotenv-cli@^5.1.0:
   version "5.1.0"

@@ -27,7 +27,9 @@ let emojiNames: string[] = [];
 })();
 
 plugin.onMessageSend({
-    middleware: true
+    middleware: true,
+    // Regex to match emoji names in a string (in the format ::emoji-name_here::)
+    regex: /::([a-zA-Z0-9_]+)::/g
 }, message => {
     if(message.msg.length < 4) return;
 
